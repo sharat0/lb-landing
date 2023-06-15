@@ -304,6 +304,10 @@ p {
     animation: testimonial 15s ease infinite;
 }
 
+.flex-testimonial:hover .testimonial{
+    animation: none;
+}
+
 /* animation testimonial */
 
 @keyframes testimonial {
