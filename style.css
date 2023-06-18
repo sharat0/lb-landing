@@ -426,6 +426,12 @@ p {
     font-family: 'Prompt', sans-serif;
     font-size: 1.2em;
     box-shadow: 0 0 20px rgba(0, 0, 0, .05);
+    transition: .3s all ease;
+}
+
+
+#pricing .block:not(:hover){
+    transform: scale(.9) translateY(-7%);
 }
 
 #pricing ul li{
@@ -481,6 +487,9 @@ p {
     background-color: #7FD1AE !important;
 }
 
+.recommended:not(:hover){
+    transform: scale(1) translateY(0%) !important;
+}
 
 .recommended .pricing-name-data{
     border-bottom: 2PX SOLID #fff;
