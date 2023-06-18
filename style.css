@@ -397,6 +397,7 @@ p {
     background: radial-gradient(circle, rgba(0, 102, 255, 0.3029586834733894) 0%, rgba(228, 239, 255, 0.43461134453781514) 100%);
     min-height: 100vh;
     padding-top: 100px;
+    padding-bottom: 50px;
 }
 
 #pricing h1 {
@@ -427,12 +428,60 @@ p {
     box-shadow: 0 0 20px rgba(0, 0, 0, .05);
 }
 
-.recommended{
-    background-color: #7FD1AE !important;
+#pricing ul li{
+    list-style-type:square;
+    margin-bottom: 10px;
+}
+
+#pricing .unactive{
+    opacity:.5!important ;
+}
+
+
+.pricing-name-data{
+    padding: 20PX 10PX;
+    padding-top: 0;
+    margin-bottom: 20PX;
+    border-bottom: 2PX SOLID #a3c4f1;
+    width: 90%;
+}
+
+.pricing-name-data .flex {
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+#pricing .name-details{
+    display: block;
+    justify-content: space-between;
+    
+}
+
+.name{
+    font-weight: bold;
+
+}
+
+.price{
+    background-color: #edf4ff;
+    padding: 5px 10px;
+    border-radius: 10px;
+
 }
 
 #pricing .btn{
     font-size: 1.1em;
     width: 90%;
     margin-top: 25px;
+}
+
+
+
+.recommended{
+    background-color: #7FD1AE !important;
+}
+
+
+.recommended .pricing-name-data{
+    border-bottom: 2PX SOLID #fff;
 }
