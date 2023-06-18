@@ -27,15 +27,16 @@ header a {
     transition: .2s;
 }
 
-header a:hover{
+header a:hover {
     background-color: #0066ff;
     color: #fff;
 }
 
-.active a{
+.active a {
     background-color: #0066ff;
     color: #fff;
 }
+
 
 header {
     position: fixed;
@@ -62,7 +63,7 @@ header ul {
     width: 20%;
 }
 
-main {
+#main {
     min-height: 100vh;
     height: auto;
     display: flex;
@@ -134,7 +135,7 @@ h2 {
 main p {
     font-family: 'Prompt', sans-serif;
     font-size: 1.2em;
-    text-align: center;
+    text-align: justify;
     margin-bottom: 3%;
 }
 
@@ -151,7 +152,7 @@ main p {
 }
 
 .btn:hover {
-    background-color: rgba(0, 102, 255,.8);
+    background-color: rgba(0, 102, 255, .8);
     box-shadow: 0 0 15px #0066ff;
     transition: .5S ease;
 }
@@ -198,6 +199,32 @@ main p {
     background-color: #f6f9fccc;
     transition: .5s;
     box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+}
+
+
+.new {
+    background-color: #0066ff;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    animation: new-animate 1.5s linear infinite;
+    /* transition: opacity 2s ease; */
+}
+
+/* animation blink new-animate */
+@keyframes new-animate {
+    0% {
+        opacity: .7;
+    }
+
+    100% {
+        opacity: 0
+    }
+
+    50% {
+        opacity: 1
+    }
 }
 
 
@@ -279,21 +306,22 @@ p {
     background-color: #e4efff;
 }
 
-#testimonials h2 ,#customers h2{
+#testimonials h2,
+#customers h2 {
     text-align: center;
     padding-top: 50px;
     padding-bottom: 30px;
     font-size: 2.5em;
 }
 
-.flex-testimonial{
+.flex-testimonial {
     display: flex;
     flex-direction: row;
     overflow: hidden;
-    height: 35vh ;
+    height: 35vh;
 }
 
-.testimonial{
+.testimonial {
     width: 30%;
     height: 300px;
     background-color: #a3c4f1;
@@ -304,19 +332,24 @@ p {
     animation: testimonial 15s ease infinite;
 }
 
+.flex-testimonial:hover .testimonial {
+    animation: none;
+}
+
 /* animation testimonial */
 
 @keyframes testimonial {
     0% {
         transform: translateX(80%);
     }
+
     100% {
         transform: translateX(-80%);
     }
 }
 
 
-#customers{
+#customers {
     min-height: 55vh;
     height: auto;
     background-color: #e4efff;
@@ -324,6 +357,140 @@ p {
 }
 
 
-#customers img{
+#customers img {
     width: 10%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* PRICING */
+#pricing {
+    min-height: 100vh;
+    height: auto;
+    background: rgb(0, 102, 255);
+    background: radial-gradient(circle, rgba(0, 102, 255, 0.3029586834733894) 0%, rgba(228, 239, 255, 0.43461134453781514) 100%);
+    min-height: 100vh;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+#pricing h1 {
+    color: #000;
+    display: block;
+    text-align: center;
+    position: relative;
+    margin-bottom: 0;
+}
+
+#pricing p{
+    width: 60%;
+    margin-left: 20%;
+    text-align: center;
+}
+
+
+#pricing .block{
+    width: 30%;
+    background-color: #fff;
+    padding: 20px;
+    margin-left: 2.5%;
+    border-radius: 20px;
+    min-height: 50vh;
+    height: auto;
+    font-family: 'Prompt', sans-serif;
+    font-size: 1.2em;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .05);
+    transition: .3s all ease;
+}
+
+
+#pricing .block:not(:hover){
+    transform: scale(.9) translateY(-7%);
+}
+
+#pricing ul li{
+    list-style-type:square;
+    margin-bottom: 10px;
+}
+
+#pricing .unactive{
+    opacity:.5!important ;
+}
+
+
+.pricing-name-data{
+    padding: 20PX 10PX;
+    padding-top: 0;
+    margin-bottom: 20PX;
+    border-bottom: 2PX SOLID #a3c4f1;
+    width: 90%;
+}
+
+.pricing-name-data .flex {
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+#pricing .name-details{
+    display: block;
+    justify-content: space-between;
+    
+}
+
+.name{
+    font-weight: bold;
+
+}
+
+.price{
+    background-color: #edf4ff;
+    padding: 5px 10px;
+    border-radius: 10px;
+
+}
+
+#pricing .btn{
+    font-size: 1.1em;
+    width: 90%;
+    margin-top: 25px;
+}
+
+
+
+.recommended{
+    background-color: #7FD1AE !important;
+}
+
+.recommended:not(:hover){
+    transform: scale(1) translateY(0%) !important;
+}
+
+.recommended .pricing-name-data{
+    border-bottom: 2PX SOLID #fff;
 }

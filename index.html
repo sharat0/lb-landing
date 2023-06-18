@@ -19,9 +19,9 @@
     <header>
         <span class="logo">Learners Booth</span>
         <ul>
-            <li class="active"><a href="">Home</a></li>
-            <li><a href="">Services</a></li>
-            <li><a href="">Pricing</a></li>
+            <li class="active"><a href="./">Home</a></li>
+            <li><a href="./services/">Services</a></li>
+            <li><a href="./pricing/">Pricing</a></li>
             <li><a href="">About</a></li>
             <li><a href="">Contact</a></li>
         </ul>
@@ -30,7 +30,8 @@
             <li><a href="">Signup</a></li>
         </ul>
     </header>
-    <main>
+    <main id="main">
+        <li>E-Library</li>
 
         <div class="blob">
             <!-- This SVG is from https://codepen.io/Ali_Farooq_/pen/gKOJqx -->
@@ -41,14 +42,13 @@
             </svg>
         </div>
         <div class="block">
-            <h1>A dummy Page</h1>
-            <!-- <h1>Learners Booth</h1> -->
+            <h1>Learners Booth</h1>
             <h2>Where education meets innovation</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-
-                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                    reprehenderit in voluptate velit esse cillum dolore eu fu
+                <p>
+                    Our adaptable system enables individuals to effortlessly oversee their educational institutions, be
+                    it schools, colleges, or other institutions, at any time and from any location, devoid of any
+                    complications. Additionally, our connect feature facilitates the exchange of information and fosters
+                    an enhanced learning experience by bringing all institutes together on a unified platform.
                 </p>
                 <!-- join now -->
                 <span class="btn">Join Now</span>
@@ -67,34 +67,58 @@
     <div id="services">
         <h2>We offer a wide range of services !</h2>
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem in nihil inventore excepturi dolores
-            ratione suscipit, quis sunt aperiam. Voluptate velit architecto et deleniti est, incidunt vitae iste quod
-            id, suscipit, blanditiis labore laudantium esse iure sit dolor dignissimos provident! Quae, neque magnam
-            dolorum vero at dicta quos suscipit. Sed minus culpa obcaecati placeat modi, odit atque officia. Facere cum
-            velit excepturi eveniet beatae ipsam iure fuga minus odit tempora? Odit eaque illum deserunt placeat earum.
-            In accusamus molestias libero!
+            Our platform encompasses a comprehensive range of tools necessary for efficiently managing educational
+            institutions, encompassing crucial aspects such as student enrollment, learning management system, student
+            information, attendance system, tests, faculty management, lab management, chatroom, and more. Let us now
+            delve into each of these components individually to gain a deeper understanding.
         </p>
         <div class="flex">
             <div class="service">
+                <i class="fa-solid fa-circle-info"></i>
+                <span class="head">Connect </span>
+                <span class="new">New</span>
+                <p>Our "Connect" feature serves as a central hub for all kinds of important information like latest
+                    event announcements, important dates, or syllabus updates, ensuring
+                    everyone in same or different institutions at our plaatform stays connected.</p>
+            </div>
+            <div class="service">
+                <i class="fa-solid fa-school"></i>
+                <span class="head">Student Management</span>
+                <p>Our student management system simplifies the process of student enrollment enabling seamless
+                    sharing of learning content, results, and granting access to labs with just a few clicks.
+                    <!-- Furthermore, accessing the data is effortless and convenient, right at your fingertips. -->
+                </p>
+            </div>
+            <div class="service">
+                <i class="fa-solid fa-book"></i>
+                <span class="head">Faculty Management</span>
+                <p>Our faculty management system streamlines the administrative tasks related to managing faculty
+                    members within your institution like
+                    faculty recruitment, assignment of courses, scheduling, and tracking attendance.</p>
+            </div>
+            <div class="service">
                 <i class="fa-solid fa-book"></i>
                 <span class="head">LMS</span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, ea! Voluptatibus voluptate
-                    perspiciatis quod voluptatem itaque maiores, explicabo officia delectus ipsum eveniet odio
-                    exercitationem, dolores ipsam!</p>
+                <p>
+                    We have a flexible learning management system for smooth and easy to manage course content that
+                    brings together learning, growth, skills, and capabilities into a personalized, curated experience.
+                </p>
             </div>
             <div class="service">
                 <i class="fa-solid fa-clipboard-user"></i>
                 <span class="head">Attendance</span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, ea! Voluptatibus voluptate
-                    perspiciatis quod voluptatem itaque maiores, explicabo officia delectus ipsum eveniet odio
-                    exercitationem, dolores ipsam!</p>
+                <p>Our easy to use online attendance system make taking attendance
+                    quick and less prone to errors. Record a student’s attendance with a click of
+                    the mouse and the data is visible immediately to students as well as parents.
+
+                </p>
             </div>
             <div class="service">
                 <i class="fa-solid fa-square-poll-vertical"></i>
                 <span class="head">Results</span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, ea! Voluptatibus voluptate
-                    perspiciatis quod voluptatem itaque maiores, explicabo officia delectus ipsum eveniet odio
-                    exercitationem, dolores ipsam!</p>
+                <p>Our platform makes it easy to update results on few clicks without fear of errors. Record a student’s
+                    results with a click of
+                    the mouse and the data is visible immediately to students as well as parents.</p>
             </div>
             <div class="service">
                 <i class="fa-solid fa-book"></i>
@@ -104,29 +128,8 @@
                     exercitationem, dolores ipsam!</p>
             </div>
             <div class="service">
-                <i class="fa-solid fa-school"></i>
-                <span class="head">Class Management</span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, ea! Voluptatibus voluptate
-                    perspiciatis quod voluptatem itaque maiores, explicabo officia delectus ipsum eveniet odio
-                    exercitationem, dolores ipsam!</p>
-            </div>
-            <div class="service">
-                <i class="fa-solid fa-circle-info"></i>
-                <span class="head">Circular</span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, ea! Voluptatibus voluptate
-                    perspiciatis quod voluptatem itaque maiores, explicabo officia delectus ipsum eveniet odio
-                    exercitationem, dolores ipsam!</p>
-            </div>
-            <div class="service">
                 <i class="fa-solid fa-book"></i>
                 <span class="head">Lab Management</span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, ea! Voluptatibus voluptate
-                    perspiciatis quod voluptatem itaque maiores, explicabo officia delectus ipsum eveniet odio
-                    exercitationem, dolores ipsam!</p>
-            </div>
-            <div class="service">
-                <i class="fa-solid fa-book"></i>
-                <span class="head">Syllabus Management</span>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, ea! Voluptatibus voluptate
                     perspiciatis quod voluptatem itaque maiores, explicabo officia delectus ipsum eveniet odio
                     exercitationem, dolores ipsam!</p>
@@ -210,6 +213,13 @@
         <h2>Our Customers</h2>
         <div class="flex-customers">
             <div class="customer">
+                <img src="img/ease.svg" alt="test">
+                <img src="img/ease.svg" alt="test">
+                <img src="img/ease.svg" alt="test">
+                <img src="img/ease.svg" alt="test">
+                <img src="img/ease.svg" alt="test">
+                <img src="img/ease.svg" alt="test">
+                <img src="img/ease.svg" alt="test">
                 <img src="img/ease.svg" alt="test">
             </div>
         </div>
