@@ -440,7 +440,8 @@ p {
 }
 
 #pricing .unactive{
-    opacity:.5!important ;
+    opacity:.7!important ;
+    text-decoration-line: line-through;
 }
 
 
