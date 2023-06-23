@@ -28,7 +28,7 @@ header a {
 }
 
 header a:hover {
-    background-color: #0066ff;
+    background-color: #0066ff59;
     color: #fff;
 }
 
@@ -494,4 +494,88 @@ p {
 
 .recommended .pricing-name-data{
     border-bottom: 2PX SOLID #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CO0NTACT US BEGINS */
+/* CO0NTACT US BEGINS */
+/* CO0NTACT US BEGINS */
+/* CO0NTACT US BEGINS */
+
+
+.contact{
+    width: 100vw;
+    min-height: 100vh;
+    height: auto;
+}
+
+.block{
+    width: 40%;
+    background-color: #0066ff;
+}
+
+.form{
+    width: 60%;
+    background-color: #fff;
+}
+
+.contact p{
+    margin: 0;
+    padding: 0;
+}
+
+.contact .head{
+    font-size: 1.4rem !important;
+    font-weight: 600;
+}
+.contact .data{
+     margin-bottom: 20px;
+}
+
+.contact p a{
+    color: #000;
+    font-size: 1.4rem;
+}
+
+.contact span.head{
+    font-size: 1.8rem !important;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+
+.form .head{
+    top: 0;
+}
+
+.form-control{
+    margin-bottom: 20px  ;
 }
