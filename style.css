@@ -416,22 +416,31 @@ p {
 
 
 #pricing .block{
-    width: 30%;
+    width: 25%;
     background-color: #fff;
     padding: 20px;
-    margin-left: 2.5%;
+    margin-left: 6%;
     border-radius: 20px;
     min-height: 50vh;
     height: auto;
     font-family: 'Prompt', sans-serif;
     font-size: 1.2em;
-    box-shadow: 0 0 20px rgba(0, 0, 0, .05);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .2);
     transition: .3s all ease;
+    /* margin-top: 1%; */
 }
 
 
 #pricing .block:not(:hover){
     transform: scale(.9) translateY(-7%);
+}
+
+#pricing .block:hover{
+    background-image: radial-gradient(circle, #c1d6f8, #d5dffa, #ced6f7, #f3f4fd, #dfe9f4) !important;
+}
+
+#pricing .block:hover .price{
+    background-color: #d6e4fa !important;
 }
 
 #pricing ul li{
@@ -441,11 +450,12 @@ p {
 
 #pricing .unactive{
     opacity:.5!important ;
+    text-decoration: line-through;
 }
 
 
 .pricing-name-data{
-    padding: 20PX 10PX;
+    padding: 0 10PX;
     padding-top: 0;
     margin-bottom: 20PX;
     border-bottom: 2PX SOLID #a3c4f1;
@@ -484,7 +494,13 @@ p {
 
 
 .recommended{
-    background-color: #7FD1AE !important;
+    /* background-color: #7FD1AE !important; */
+    background-image: radial-gradient(circle, #c1d6f8, #d5dffa, #e5e9fb, #f3f4fd, #ffffff) !important;
+    margin-top: -3% !important;
+}
+
+.recommended:hover{
+    background-image: radial-gradient(circle, #c1d6f8, #d5dffa, #ced6f7, #f3f4fd, #dfe9f4) !important;
 }
 
 .recommended:not(:hover){
@@ -493,4 +509,62 @@ p {
 
 .recommended .pricing-name-data{
     border-bottom: 2PX SOLID #fff;
+}
+
+.recommended .price{
+    background-color: #d6e4fa !important;
+}
+/* PRICING RESPONSIVE */
+
+
+
+@media(min-width:700px) and (max-width:972px) {
+    .pricing-flex{
+        flex-direction: column-reverse !important;
+        flex-wrap: initial;
+        align-items: flex-start;
+    }
+    #pricing .block {
+        display: block !important;
+        width: 60% !important;
+        margin-left: 20% !important;
+
+        /* padding: 0; */
+    }
+    .recommended{
+        margin-bottom: 5%;
+    }
+    .pricing-flex ul{
+        padding-left: 15%;
+        margin-bottom: 40px;
+    }
+    #pricing .btn{
+        display: block;
+        /* width: 80% !important; */
+        margin-left: 5%;
+    }
+}
+
+@media(min-width:240px) and (max-width:700px) {
+    .pricing-flex ul{
+        padding-left: 2%;
+        margin-bottom: 40px;
+    }
+    .pricing-flex{
+        flex-direction: column-reverse !important;
+        flex-wrap: initial;
+    }
+    #pricing .block {
+        width: 90% !important;
+        align-items: flex-start;
+    }
+    .recommended{
+        margin-bottom: 12%;
+    }
+}
+
+@media(min-width:200px) and (max-width:850px) {
+    header{
+        display: none;
+    }
 }
