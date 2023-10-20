@@ -31,13 +31,13 @@ header a {
 }
 
 header a:hover {
-    background-color: #0066ff;
-    color: #fff;
+    background-color: #0066ff57;
+    color: #000;
 }
 
 .active a {
-    background-color: #0066ff;
-    color: #fff;
+    background-color: #0066ff !important;
+    color: #fff !important;
 }
 
 
@@ -815,4 +815,37 @@ p {
             overflow-x :hidden;
         }
     
+}
+
+
+#services-main{
+    background-color: #35316a;
+    padding-top: 100px;
+    height: 50vh;
+}
+#services-main h1{
+    color: #fff;
+    display: block;
+    text-align: center;
+    padding-top: 10vh;
+    text-shadow: none;
+    position: absolute;
+    width: 100%;
+    z-index: 99;
+    font-size: 3rem;
+}
+
+.services-head{
+    font-size: 14em;
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: #35316a;
+    text-shadow: 1px 1px 1px #fff;
+    position: absolute;
+    top: 14vh;
+}
+
+.services-head-small{
+    color: red;
 }
