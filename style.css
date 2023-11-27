@@ -821,7 +821,7 @@ p {
 #services-main{
     
     padding-top: 100px;
-    height: vh;
+    height: 90vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -829,12 +829,13 @@ p {
     padding: auto;
     width: 100%;
     background-color: #e6f0ff;
+    padding-bottom: 10px;
 }
 
 
 #services-main .empty-box{
-    height: 330px;
-    width: 550px;
+    height: 50vh;
+    width: 40vw;
     background-color:#b9baba;
     align-items: center;
     margin-bottom: 5%;
@@ -849,7 +850,7 @@ p {
 
 #services-main .btn{
     width: 23%;
-    margin-left:40%;
+    margin-left:35%;
     text-align: center;
     margin-top: 10%;
       
@@ -909,7 +910,6 @@ p {
     display: flex;
     flex-direction: row;
     width: 100%;
-    min-height: 350px;
     background-color:#fbfdff;
     margin: 2%;
     justify-content: center;
@@ -924,21 +924,18 @@ p {
 }
     
 #services .flex .service .circle{
-    height: 200px;
-    width: 200px;
+    height: 25vh;
+    width: 12.5vw;
     background-color:#b9baba;
     border-radius: 50%;
     border: 1px solid #b0b0b0;
 }
 
 #services .empty-box{
-    height: 300px;
-    width: 400px;
+    height: 30vh;
+    width: 70vw;
     background-color:#b9baba;
     border: 1px solid #b0b0b0;
-}
-#services-features{
-    border: 5px solid blue;
 }
 
 #services-features .service{
