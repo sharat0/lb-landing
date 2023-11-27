@@ -819,21 +819,42 @@ p {
 
 
 #services-main{
-    background-color: #35316a;
+    
     padding-top: 100px;
-    height: 50vh;
-}
-#services-main h1{
-    color: #fff;
-    display: block;
-    text-align: center;
-    padding-top: 10vh;
-    text-shadow: none;
-    position: absolute;
+    height: vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: auto;
     width: 100%;
-    z-index: 99;
-    font-size: 3rem;
+    background-color: #e6f0ff;
 }
+
+
+#services-main .empty-box{
+    height: 330px;
+    width: 550px;
+    background-color:#b9baba;
+    align-items: center;
+    margin-bottom: 5%;
+    border: 1px solid #b0b0b0;
+}
+#services-main .services{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    line-height: 50px;
+}
+
+#services-main .btn{
+    width: 23%;
+    margin-left:40%;
+    text-align: center;
+    margin-top: 10%;
+      
+}
+
 
 .services-head{
     font-size: 14em;
@@ -846,6 +867,97 @@ p {
     top: 14vh;
 }
 
+.services .flex{
+    border-radius: 0%;
+}
+
 .services-head-small{
     color: red;
 }
+
+#services h3{
+    font-size:2.5rem;
+    margin-left: 50px;
+    padding: 35px;  
+}
+#services .flex .service{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+#services .service .head{
+    padding: 20px;
+}
+
+#services .service .btn{
+    align-items: flex-start;
+    width:30%;
+    margin-left: 5%;
+    text-align: center;
+    border-radius: 0%;
+}
+
+#services {
+    background-color: #f6f9fccc;
+    min-height: 100vh;
+    height: auto;
+}
+
+#services .block {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 350px;
+    background-color:#fbfdff;
+    margin: 2%;
+    justify-content: center;
+    border-radius:0%;
+
+}
+.block .service{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    flex-wrap: wrap;
+}
+    
+#services .flex .service .circle{
+    height: 200px;
+    width: 200px;
+    background-color:#b9baba;
+    border-radius: 50%;
+    border: 1px solid #b0b0b0;
+}
+
+#services .empty-box{
+    height: 300px;
+    width: 400px;
+    background-color:#b9baba;
+    border: 1px solid #b0b0b0;
+}
+#services-features{
+    border: 5px solid blue;
+}
+
+#services-features .service{
+    background-color: ;
+    border-radius: 0%;
+}
+
+#useful-features{
+    background-color: #d9e8ff;
+}
+#useful-features .block{
+    background-color:#e6f0ff
+}
+
+#useful-features .service .empty-box{
+    width: 100%;
+    height: 28vh;
+}
+#services .flex .empty-box{
+    width: 100%;
+}
+
