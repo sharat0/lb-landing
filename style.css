@@ -823,7 +823,7 @@ p {
     padding-top: 100px;
     height: 90vh;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: auto;
@@ -832,6 +832,14 @@ p {
     padding-bottom: 10px;
 }
 
+@media(min-width:200px) and (max-width:850px){
+    #services-main{
+        flex-direction: column;
+    }
+    #services-main .services{
+        flex-direction: column;
+    }
+}
 
 #services-main .empty-box{
     height: 50vh;
@@ -839,20 +847,29 @@ p {
     background-color:#b9baba;
     align-items: center;
     margin-bottom: 5%;
+    padding-top: 50px;
+    margin-top: 15%;
     border: 1px solid #b0b0b0;
 }
 #services-main .services{
-    width: 50%;
+  
+   justify-content: space-between;
     display: flex;
     flex-direction: column;
+    height: 80%;
+    width: 100%;
+    align-items: center;
+    flex-direction: row;
     line-height: 50px;
+    padding: 30px;
 }
 
 #services-main .btn{
-    width: 23%;
-    margin-left:35%;
+    width: 15%;
+    margin-right:50%;
     text-align: center;
-    margin-top: 10%;
+    margin-bottom: 10%;
+    padding-left: 50px;
       
 }
 
@@ -957,6 +974,32 @@ p {
 
 #services .flex .empty-box{
     width: 100%;
+}
+
+@media(min-width:240px) and (max-width:860px) {
+    #services-features .block{
+        width: 46% !important;
+        margin: 2% 2% !important;
+    }
+    #services-main .services{
+        width: 90%;
+        margin:2% 2% ;
+        
+    }
+
+    #useful-features .block{
+        width: 96% !important;
+        margin: 2% 2%;
+    }
+
+    #services .btn{
+        width: 60% !important;
+        margin-left: 20% !important;
+    }
+
+    #main h2{
+        margin-left: 5%;
+    }
 }
 
 
