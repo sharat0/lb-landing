@@ -851,8 +851,8 @@ p {
     margin-top: 15%;
     border: 1px solid #b0b0b0;
 }
+
 #services-main .services{
-  
    justify-content: space-between;
     display: flex;
     flex-direction: column;
@@ -976,31 +976,7 @@ p {
     width: 100%;
 }
 
-@media(min-width:240px) and (max-width:860px) {
-    #services-features .block{
-        width: 46% !important;
-        margin: 2% 2% !important;
-    }
-    #services-main .services{
-        width: 90%;
-        margin:2% 2% ;
-        
-    }
 
-    #useful-features .block{
-        width: 96% !important;
-        margin: 2% 2%;
-    }
-
-    #services .btn{
-        width: 60% !important;
-        margin-left: 20% !important;
-    }
-
-    #main h2{
-        margin-left: 5%;
-    }
-}
 
 
 #choose-us{
