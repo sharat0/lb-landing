@@ -823,7 +823,7 @@ p {
     padding-top: 100px;
     height: 90vh;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: auto;
@@ -834,25 +834,34 @@ p {
 
 
 #services-main .empty-box{
-    height: 50vh;
+    height: 60vh;
     width: 40vw;
     background-color:#b9baba;
     align-items: center;
     margin-bottom: 5%;
-    border: 1px solid #b0b0b0;
+    padding-top: 50px;
+    margin-top: 20%;
+    border: 1px solid #b9baba;
 }
 #services-main .services{
-    width: 50%;
+  
+   justify-content: space-between;
     display: flex;
     flex-direction: column;
+    height: 80%;
+    width: 90%;
+    align-items: center;
+    flex-direction: row;
     line-height: 50px;
+    padding: 30px;
 }
 
 #services-main .btn{
-    width: 23%;
-    margin-left:35%;
+    width: 15%;
+    margin-right:50%;
     text-align: center;
-    margin-top: 10%;
+    margin-bottom: 10%;
+    padding-left: 50px;
       
 }
 
@@ -954,7 +963,272 @@ p {
     width: 100%;
     height: 28vh;
 }
+
 #services .flex .empty-box{
     width: 100%;
 }
+
+
+
+
+#choose-us{
+    height: 80vh;
+    
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+#choose-us .feature{
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    width: 50%;
+    justify-content: space-between;
+    background-color:#d9e8ff;
+    padding-left: 15px;
+}
+#choose-us .feature h2{
+    padding: 60px 20px; 
+}
+
+#choose-us .feature .point{
+    display: flex;
+    flex-direction:row;
+    align-items: start;
+}
+#choose-us .feature .quote{
+    padding-left: 30px;
+}
+
+#choose-us .feature .quote .point .circle{
+    height: 7vh;
+    width: 3.5vw;
+    border-radius: 50%;
+    background-color:#dddddd;
+   
+}
+#choose-us .feature .quote .point p{
+   
+    padding-top: 7px;
+}
+#choose-us .empty-box{
+    background-color:#e6e6e6;
+    width: 50%;
+    border: 3px solid #b0b0b0;
+}
+
+/* contact-us */
+
+#contact-us{
+    display: flex;
+    height: 70vh;
+    flex-direction: row;
+    padding: 50px;
+    margin-top: 30px;
+}
+#contact-us .empty-box{
+    width: 35%;
+    background-color: #b0b0b0; 
+}
+
+#contact-us .feature{
+    width: 65%;
+    padding-top: 15px;
+}
+#contact-us .feature h3{
+    padding-left: 50px;
+    font-size:1.5rem; 
+    font-family:'Times New Roman', Times, serif;
+
+}
+#contact-us .feature .contact-now{
+    padding-left: 50px;
+    padding-bottom: 20px;
+    padding-top: 30px; 
+}
+#contact-us .feature .contact-now h2{
+    font-size: 1.3rem;
+}
+.form input{
+    height: 5vh;
+    width: 19vw;
+    
+}
+#contact-us .form{
+    padding-left: 50px;
+}
+#contact-us .form #fname{
+    margin-right: 25px;
+}
+#contact-us .form #phone{
+    width:40vw ;
+    margin: 30px 0px 30px 0px;
+}
+#contact-us .form #email{
+    width: 40vw;
+}
+#contact-us .form #btn{
+    width: 8vw;
+    margin-top:30px ;
+    background-color: #0066ff;
+    border-radius: 5px;
+}
+
+/*About us  */
+
+#about-us{
+    background-color: #d9e8ff;
+    height: 70vh;
+    display:flex;
+    flex-direction: column;
+    padding-top: 150px;
+}
+#about-us .logo{
+    width: 50%;
+    align-items: center;
+    padding-left: 160px;
+    justify-content: center;
+}
+#about-us .split{
+    display: flex;
+    flex-direction: row;
+}
+#about-us .more{
+    display: flex;
+    flex-direction: row;
+    height:25vh;
+}
+#about-us .more .mobile{
+  
+    justify-content: flex-start;
+}
+
+#about-us .more .mobile{
+    line-height: 35px;
+
+}
+#about-us .more h3{
+    align-items: center;
+    padding: 20px;
+    padding-bottom: 0%;
+}
+
+#about-us .more .community{
+    line-height: 35px;
+}
+#about-us .more .company{
+    line-height: 35px;
+}
+
+#about-us .register .btn{
+    border-radius: 0%;
+}
+#about-us .login .btn{
+    background-color: white;
+    color: #0066ff;
+    border: 3px solid #b0d0ff;
+    border-radius:  10px;
+}
+#about-us .sign-in{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    justify-content: space-between;
+}
+
+hr.solid{
+    border-top: 3px solid #b0b0b0;
+    margin-top: 35px;
+    margin-left: 10%;
+    width: 80%;
+}
+#about-us .social-media h3{
+    margin-top: 20%;
+    
+
+}
+
+#about-us .flex{
+    display:flex;
+    flex-direction:row;
+    padding: 50px;
+}
+
+#about-us .flex .quote{
+    width: 50%;
+}
+#about-us .flex .social-media{
+    display: flex;
+    flex: row;
+
+}
+#about-us .flex .social-media{
+    display: flex;
+    flex-direction: row;
+    padding-right: 5px;
+    
+}
+
+#about-us .flex .social-media .icon{
+    display: flex;
+    justify-content: space-between;
+}
+
+    #about-us .social-media .fa {
+        padding: 20px;
+        font-size: 30px;
+        width: 50px;
+        text-align: center;
+        text-decoration: none;
+      }
+      .fa {
+        font-size:60px;
+        width: 20px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+        border-radius: 50%;
+      }
+      
+      .fa:hover {
+          opacity: 0.7;
+      }
+      
+      .fa-facebook {
+        height: 50px;
+        width: 20px;
+        border-radius: 50%;
+        background: #0f63f5;
+        color: white;
+      }
+      
+      .fa-twitter {
+        height: 50px;
+        width: 20px;
+        border-radius: 50%;
+        background: #55ACEE;
+        color: white;
+      }
+      
+      .fa-linkedin {
+        height: 50px;
+        width: 20px;
+        border-radius: 50%;
+        background: #007bb5;
+        color: white;
+      }
+      .fa-instagram {
+        height: 50px;
+        width: 20px;
+        border-radius: 50%;
+        background: #881212;
+        color: white;
+      }
+      
+      
+
+
+
+
 
