@@ -796,6 +796,7 @@ p {
 .services-main {
   background-color: #d9e8ff;
   padding: 1%;
+  min-height: 70vh;
 }
 .services-features >h2,
 .useful-features > h2 ,
@@ -806,35 +807,26 @@ p {
     font-size: 2.5em;
 }
 .services-main .empty-box {
-  min-height: 60vh;
-  width: 40vw;
+  height: 60vh;
+  width: 50%;
   background-color: #dddddd;
   align-items: center;
-  margin-bottom: 5%;
-  padding-right: 30px;
-  margin-top: 10%;
   border: 1px solid #b9baba;
 }
 .services-main .services {
   justify-content: space-between;
   display: flex;
-  flex-direction: column;
-  height: 80%;
-  width: 90%;
+  flex-direction:row;
+  height: 90vh;
+  width: 100%;
   align-items: center;
-  flex-direction: row;
   line-height: 50px;
   padding: 50px;
 }
-
-.services-main .btn {
-  margin-right: 50%; 
-  text-align: center;
-  background-color: #0066ff;
-  padding: 15px 30px;
-  
-
+.services-main .services h2{
+  width: 50%;
 }
+
 
 /* features */
 
@@ -849,6 +841,7 @@ p {
 .flex{
   display: flex;
   flex-wrap: wrap;
+  
 }
 
 #services-features .service .head {
@@ -871,8 +864,6 @@ p {
 }
 
 .services-features .btn{
-  width: 30%;
-  margin-bottom: 30px;
   border-radius: 0%;
 
 }
@@ -885,7 +876,6 @@ p {
   background-color: #d9e8ff;
 }
 h3{
-  padding-left: 30px;
   font-size: 1.5rem;
 }
 
@@ -961,24 +951,22 @@ h3{
   min-height: 90vh;
   flex-direction: row;
   padding: 30px;
+  width: 100%;
+  justify-content: space-between;
 }
+
 .contact-us .empty-box {
-  width: 35%;
+  width: 100%;
   background-color: #dddddd;
-  padding: 50px;
+  padding-left: 50px;
 }
-.contact-us h3{
-  padding-left: 70px;
-  padding-top: 50px;
+
+
+.contact-us .flex{
+  width: 50%;
+  padding-left: 40px;
 }
-.contact-us .flex {
-  width: 60%;
-  justify-content: center;
-}
-.contact-us .flex  h2 {
-  font-size: 2rem;
-  padding-left: 70px;
-}
+ 
 .form input {
   height: 5vh;
   width: 19vw;
@@ -988,7 +976,7 @@ h3{
 }
 .contact-us .form #phone {
   width: 40vw;
-  margin: 30px 0px 30px 0px;
+  margin: 20px 0px 20px 0px;
 }
 .contact-us .form #email {
   width: 40vw;
@@ -1032,6 +1020,7 @@ padding-left: 160px;
 }
 .about-us .sign-in .login{
     padding-top: 20px; 
+    border-radius: 0%;
 }
 
 .about-us .sign-in {
@@ -1112,32 +1101,73 @@ hr.solid {
 
 /*responsive services  */
 
-@media (min-width: 240px) and (max-width: 600px) {
-  .services {
-    flex-direction: column;
-    width: auto;
-  }
-  *{
-    margin: 0%;
-  }
-  .empty-box {
+@media (min-width: 240px) and (max-width: 800px) {
+  
+  .contact-us .empty-box{
+    min-height: 30vh;
     width: 100%;
-    padding-left: 2%;
   }
+  .services-main .empty-box{
+    width: 100%;
+    height: 50vh;
+  }
+  .contact-us h2{
+    width: 90%;
+    padding-bottom: 30px;
+    padding-top: 20px;
+  }
+  
+  
+  .choose-us .feature h2 {
 
+    padding-top: 30px;
+  }
+  p{
+    padding:0%;
+  }
+  .contact-us{
+    flex-direction: column;
+    width: 100%;
+  }
+  .contact-us .flex h2 {
+    font-size: 1.2rem;
+    width: 100%;
+    padding-left: 10px;
+    padding-top: 20px;
+  }
+  .contact-us .form{
+    width: 100%;
+  }
+  .form input{
+    width: auto;
+    padding-bottom: 10px;
+  }
+  .about-us .flex{
+    padding: 0%;
+  }
+  .choose-us .feature .quote{
+    padding: 0%;
+  }
+  .choose-us .feature .point{
+    padding-bottom: 12px;
+    padding-right: 20px;
+  }
+  
   .services .block {
     flex-direction: column;
   }
 
   .services-main .services {
     flex-direction: column;
+    padding: 15px;
+  }
+  .services-main .services h2{
+    width: 100%;
   }
 
   .choose-us {
     flex-direction: column;
   }
-
-
 .choose-us .feature {
     width: 100%;
 }
@@ -1145,28 +1175,9 @@ hr.solid {
 .choose-us .empty-box{
     width: 100%;
 }
-
-.contact-us{
-    flex-direction: column;
-}
-
-.contact-us .feature{
-    width: 100%;
-}
-.services-main .empty-box{
-    width: 100%;
-    min-height: 200px;
-}
-
-.services-main {
-    height: auto;
-    min-width: 100vw;
-};
-.services-main .btn{
-margin-right:0%;
-}
 .btn{
     padding: 0%;
+  
 }
 .services h3{
     font-size: 1rem;
@@ -1176,16 +1187,17 @@ margin-right:0%;
 .about-us .flex .about{
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+.contact-us .flex{
+  width: 100%;
+  padding: 10px;
 }
 }
-
-@media (min-width: 589px) and (max-width: 960px) {
-
-    .useful-features .block{
-        flex-wrap: wrap;
-    }
-    services .flex .service{
-        flex: 0.5;
-    }
+@media(max-width:370px){
+  .choose-us .feature .point{
+    display: block;
+  }
 }
 
