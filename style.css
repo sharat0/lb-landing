@@ -1115,49 +1115,19 @@ hr.solid {
   justify-content: space-between;
 }
 
-.about-us .social-media .fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 50px;
-  text-align: center;
-  text-decoration: none;
-  justify-content: center;
-}
 
 
-.fa:hover {
-  opacity: 0.7;
-}
-
-.fa-facebook {
-  height: 50px;
-  width: 50px;
+.social-media i{
+  font-size: 30px !important;
+  margin-left: 15px;
+  background-color: #0066ff;
+  color: #fff;
+  padding: 5px;
   border-radius: 50%;
-  background: #0f63f5;
-  color: white;
 }
 
-.fa-twitter {
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-  background: #55acee;
-  color: white;
-}
-
-.fa-linkedin {
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-  background: #007bb5;
-  color: white;
-}
-.fa-instagram {
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-  background: #881212;
-  color: white;
+.social-media i:hover{
+    opacity: 0.7;
 }
 
 /*responsive services  */
@@ -1294,7 +1264,4 @@ hr.solid {
   .choose-us .feature .point{
     display: block;
   }
-
-
-
-
+}
