@@ -794,37 +794,58 @@ p {
 /* services page */
 
 .services-main {
-  background-color: #d9e8ff;
-  padding: 1%;
-  min-height: 70vh;
+
+  min-height: 60vh;
+  height: auto;
+  background-color: #f7faff;
+  justify-content: space-evenly;
+  display: flex;
+  flex-direction:row;
+  margin-top: 90px;
+  padding: 15px;
 }
+
 .services-features >h2,
 .useful-features > h2 ,
 .college-features >h2{
-    text-align: center;
-    padding-top: 50px;
-    padding-bottom :30px; ;
+    margin-left: 30px;
+    padding-top: 60px;
+    padding-bottom :60px; ;
     font-size: 2.5em;
 }
 .services-main .empty-box {
-  height: 60vh;
-  width: 50%;
-  background-color: #dddddd;
+  justify-content: center;
   align-items: center;
-  border: 1px solid #b9baba;
+ 
+
 }
 .services-main .services {
-  justify-content: space-between;
+  justify-content: center;
   display: flex;
-  flex-direction:row;
-  height: 90vh;
-  width: 100%;
-  align-items: center;
-  line-height: 50px;
-  padding: 50px;
-}
-.services-main .services h2{
+  flex-direction:column;
   width: 50%;
+  align-items: center;
+}
+
+.services-main .services h1{
+ font-size: 2em;
+ font-weight:200;
+ align-items: center;
+
+
+ line-height: 1.6;
+
+}
+.services-main .btn{
+  border-radius: 0%;
+  
+}
+.services-main .emp-box{
+  width: 45vw;
+  height: 50vh;
+  margin: 30px 30px 30px 30px;
+  background-color:#dddddd ;
+ 
 }
 
 
@@ -833,29 +854,31 @@ p {
 .services-features .service {
   display: flex;
   flex-direction: column;
-  padding: 1%;
-  min-width: 45.2vw;
-  justify-content: space-between;
+  min-width: 45vw;
+  height: 80vh;
+  justify-content: space-evenly;
   align-items: flex-start;
+  padding: 15px;
+  margin: 2%;
 }
-.flex{
-  display: flex;
-  flex-wrap: wrap;
-  
+ .services-features.flex{
+  padding: 15px;
+  align-items: center;
+  height: 40vh;
+
 }
 
-#services-features .service .head {
-  padding: 30px 10px 0px 30px;
- 
+.services-features .service p {
+ padding:0px
 }
 
 .services-features {
-  background-color: #f6f9fccc;
-  min-height: 100vh;
+
+  min-height: 60vh;
 }
 
 
-.services-features .flex .circle {
+.services-features  .circle {
   height: 200px;
   width: 200px;
   background-color:#dddddd ;
@@ -871,60 +894,87 @@ p {
 /* features */
 
 .useful-features{
-  min-height: 100vh;
-  padding-left: 15px;
-  background-color: #d9e8ff;
+  min-height: 40vh;
+  padding: 15px;
+  background-color: #f7faff;
+  justify-content: space-evenly;
+
 }
-h3{
+
+.useful-features h3{
+
   font-size: 1.5rem;
+  padding: 15px 0px 50px 30px;
 }
 
  .useful-features .empty-box {
-  height: 40vh;
+  height: 50%;
   background-color:#dddddd  ;
-
   border: 1px solid #b0b0b0;
 }
 
-.service {
+.useful-features .flex .service .head{
+padding-top: 15px;
+
+}
+
+.useful-features .flex .service {
   border-radius: 0%;
   width: 28vw;
-  
+  height: 60vh;
+  align-items: center;
+  justify-content: space-between;
+}
+.useful-features .flex .service p{
+  padding-top: 50px;
+  margin: 0%;
+
 }
   /* college features */
 
   .college-features{
-    min-height: 100vh;
+    min-height: 40vh;
+    width: 100%;
+    padding: 15px;
     
   }
+  .college-features h3{
+    font-size: 1.5rem;
+    padding: 0px 0px 50px 30px;
+  }
+  
   .college-features .service{
     min-height: 60vh;
+    width: 28.2vw;
+    justify-content: space-evenly;
   }
   .college-features .empty-box{
-    height: 40vh;
+    height: 30vh;
     background-color: #dddddd;
   }
   /* choose-us */
 .choose-us {
   display: flex;
-  width: 100%;
+  flex-direction: row;
+  padding: 0px 60px 0px 30px;
+  background-color: #f7faff;
+  justify-content: space-between;
 }
 
 .choose-us .feature {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  justify-content: space-between;
-  background-color: #d9e8ff;
-  padding-left: 15px;
+  align-items: center;
+  justify-content: center;
+  width: 45%;
+  height:40vh;
+ 
 }
 .choose-us .feature h2 {
-  padding: 60px 20px;
+  padding: 30px 20px;
 }
 .choose-us .feature .point {
   display: flex;
   flex-direction: row;
-  align-items: start;
+  
 }
 .choose-us .circle{
   width: 50px;
@@ -932,39 +982,45 @@ h3{
   border-radius: 50%;
   background-color:#dddddd ;
 }
-.choose-us .feature .quote {
-  padding-left: 30px;
-}
+
+
 .choose-us .feature .quote .point p {
   padding-top: 7px;
 }
 .choose-us .empty-box {
-  background-color: #dddddd;
-  width: 50%;
-  border: 3px solid #b0b0b0;
+  background-color:#dddddd ;
+  width: 45vw;
+  height: 80vh;
+  border: 1px solid #b0b0b0;
 }
 
 /* contact-us */
 
 .contact-us {
   display: flex;
-  min-height: 90vh;
+  min-height: 60vh;
   flex-direction: row;
-  padding: 30px;
-  width: 100%;
   justify-content: space-between;
+  padding: 65px;
+  width: 100%;
 }
 
 .contact-us .empty-box {
-  width: 100%;
+  width: 35vw;
+
   background-color: #dddddd;
-  padding-left: 50px;
+  height: 50vh;
+
 }
 
 
 .contact-us .flex{
-  width: 50%;
-  padding-left: 40px;
+
+  width: 55%;
+  display: flex;
+  height: 50vh;
+  flex-direction: column;
+  justify-content: space-between;
 }
  
 .form input {
@@ -984,19 +1040,22 @@ h3{
 .contact-us .form #btn {
   margin-top: 25px;
   background-color: #0066ff;
-  color: white;
-  width: 80px;
+  width: 120px;
 }
 
 /*About us  */
 
 .about-us {
-  background-color: #d9e8ff;
+  background-color: #f7faff;
   display: flex;
   flex-direction: column;
 }
 .about-us .logo {
 padding-left: 160px;
+width: 20vw;
+}
+.about-us .flex h2{
+  width: 20vw;
 }
 
 .about-us .flex .about {
@@ -1018,23 +1077,21 @@ padding-left: 160px;
   padding-bottom: 20px;
  
 }
-.about-us .sign-in .login{
+.about-us .sign-in .login .btn {
     padding-top: 20px; 
     border-radius: 0%;
-}
+    width: 135px;
+    background-color: white;
+    color: #0066ff;
+    border: 2px solid #0066ff;
 
-.about-us .sign-in {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-right: 10%;
 }
 
 hr.solid {
   border-top: 3px solid #dddddd;
   margin-top: 35px;
-  margin-left: 10%;
-  width: 80%;
+  margin-left: 5%;
+  width: 85%;
 }
 .about-us .flex h3 {
   font-size: 1.5rem;
@@ -1043,10 +1100,19 @@ hr.solid {
 
 .about-us .flex {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 50px;
+  flex-direction: row;;
+  padding: 40px;
  
+}
+.about-us .flex .quote{
+  width: 65%;
+  padding: 20px;
+}
+.about-us .flex .social-media{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .about-us .social-media .fa {
@@ -1055,14 +1121,9 @@ hr.solid {
   width: 50px;
   text-align: center;
   text-decoration: none;
+  justify-content: center;
 }
-.fa {
-  font-size: 30px;
-  width: 40px;
-  text-decoration: none;
-  margin: 5px 2px;
-  border-radius: 50%;
-}
+
 
 .fa:hover {
   opacity: 0.7;
@@ -1102,7 +1163,10 @@ hr.solid {
 /*responsive services  */
 
 @media (min-width: 240px) and (max-width: 800px) {
-  
+  .services-main{
+    flex-direction: column;
+    margin-top: 0%;
+  }
   .contact-us .empty-box{
     min-height: 30vh;
     width: 100%;
@@ -1116,18 +1180,21 @@ hr.solid {
     padding-bottom: 30px;
     padding-top: 20px;
   }
-  
+  .college-features{
+    padding:0px;
+  }
   
   .choose-us .feature h2 {
 
     padding-top: 30px;
   }
   p{
-    padding:0%;
+    padding:10%;
   }
   .contact-us{
     flex-direction: column;
     width: 100%;
+    padding: 15px;
   }
   .contact-us .flex h2 {
     font-size: 1.2rem;
@@ -1138,6 +1205,7 @@ hr.solid {
   .contact-us .form{
     width: 100%;
   }
+
   .form input{
     width: auto;
     padding-bottom: 10px;
@@ -1152,6 +1220,12 @@ hr.solid {
     padding-bottom: 12px;
     padding-right: 20px;
   }
+  .useful-features{
+    padding: 0px;
+  }
+  .choose-us .empty-box{
+    height: 35vh;
+  }
   
   .services .block {
     flex-direction: column;
@@ -1160,13 +1234,25 @@ hr.solid {
   .services-main .services {
     flex-direction: column;
     padding: 15px;
+    width: 100%;
+  }
+  .services-main .emp-box{
+    width: 100%;
+    margin: 0%;
   }
   .services-main .services h2{
     width: 100%;
   }
+  .useful-features h3 {
+
+    margin: 15px 0px 0px 30px;
+
+  }
 
   .choose-us {
     flex-direction: column;
+    height: 100vh;
+    padding: 15px;
   }
 .choose-us .feature {
     width: 100%;
@@ -1175,9 +1261,9 @@ hr.solid {
 .choose-us .empty-box{
     width: 100%;
 }
-.btn{
-    padding: 0%;
-  
+.about-us .sign-in .login .btn{
+  width: 75px;
+
 }
 .services h3{
     font-size: 1rem;
@@ -1193,11 +1279,22 @@ hr.solid {
 .contact-us .flex{
   width: 100%;
   padding: 10px;
+  flex-direction: row;
+  padding: 20px;
+}
+.about-us{
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 }
+
 @media(max-width:370px){
   .choose-us .feature .point{
     display: block;
   }
-}
+
+
+
 
