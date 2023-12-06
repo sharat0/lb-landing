@@ -831,8 +831,7 @@ p {
  font-size: 2em;
  font-weight:200;
  align-items: center;
-
-
+margin: 10%;
  line-height: 1.6;
 
 }
@@ -864,13 +863,8 @@ p {
  .services-features.flex{
   padding: 15px;
   align-items: center;
-<<<<<<< HEAD
   min-height: 40vh;
   
-=======
-  height: 40vh;
-
->>>>>>> 647f451ecfc058410754c87605205d5cc4cfc187
 }
 
 .services-features .service p {
@@ -881,7 +875,6 @@ p {
 
   min-height: 60vh;
 }
-
 
 .services-features  .circle {
   min-height: 200px;
@@ -913,27 +906,18 @@ p {
 }
 
  .useful-features .empty-box {
-  height: 50%;
+  height: 40%;
   background-color:#dddddd  ;
   border: 1px solid #b0b0b0;
-}
-
-.useful-features .flex .service .head{
-padding-top: 15px;
-
+  margin-bottom: 10%;
 }
 
 .useful-features .flex .service {
   border-radius: 0%;
   width: 28vw;
-  height: 60vh;
+  min-height: 55vh;
   align-items: center;
   justify-content: space-between;
-}
-.useful-features .flex .service p{
-  padding-top: 50px;
-  margin: 0%;
-
 }
   /* college features */
 
@@ -954,8 +938,9 @@ padding-top: 15px;
     justify-content: space-evenly;
   }
   .college-features .empty-box{
-    height: 30vh;
+    min-height: 30vh;
     background-color: #dddddd;
+    margin-bottom: 15%;
   }
   /* choose-us */
 .choose-us {
@@ -1014,7 +999,7 @@ padding-top: 15px;
   width: 35vw;
 
   background-color: #dddddd;
-  height: 50vh;
+  min-height: 50vh;
 
 }
 
@@ -1023,7 +1008,7 @@ padding-top: 15px;
 
   width: 55%;
   display: flex;
-  height: 50vh;
+  min-height: 50vh;
   flex-direction: column;
   justify-content: space-between;
 }
@@ -1033,7 +1018,7 @@ padding-top: 15px;
   width: 19vw;
 }
 .contact-us .form #fname {
-  margin-right: 25px;
+  margin-right: 19px;
 }
 .contact-us .form #phone {
   width: 40vw;
@@ -1041,6 +1026,7 @@ padding-top: 15px;
 }
 .contact-us .form #email {
   width: 40vw;
+  margin-bottom: 4%;
 }
 .contact-us .form #btn {
   margin-top: 25px;
@@ -1079,7 +1065,7 @@ width: 20vw;
 
 .about-us .register .btn {
   border-radius: 0%;
-  padding-bottom: 20px;
+  margin-bottom: 5%;
  
 }
 .about-us .sign-in .login .btn {
@@ -1200,6 +1186,7 @@ hr.solid {
     flex-direction: column;
     width: 100%;
     padding: 15px;
+    margin-bottom: 10%;  
   }
   .contact-us .flex h2 {
     font-size: 1.2rem;
@@ -1212,8 +1199,9 @@ hr.solid {
   }
 
   .form input{
-    width: auto;
+    min-width:100%;
     padding-bottom: 10px;
+    margin-bottom: 2%;
   }
   .about-us .flex{
     padding: 0%;
@@ -1248,11 +1236,6 @@ hr.solid {
   .services-main .services h2{
     width: 100%;
   }
-  .useful-features h3 {
-
-    margin: 15px 0px 0px 30px;
-
-  }
 
   .choose-us {
     flex-direction: column;
@@ -1266,14 +1249,7 @@ hr.solid {
 .choose-us .empty-box{
     width: 100%;
 }
-<<<<<<< HEAD
 
-=======
-.about-us .sign-in .login .btn{
-  width: 75px;
-
-}
->>>>>>> 647f451ecfc058410754c87605205d5cc4cfc187
 .services h3{
     font-size: 1rem;
     padding: 0%;
@@ -1303,6 +1279,7 @@ hr.solid {
   .choose-us .feature .point{
     display: block;
   }
+}
 
 
 
