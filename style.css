@@ -794,6 +794,7 @@ p {
 /* services page */
 
 .services-main {
+
   min-height: 60vh;
   height: auto;
   background-color: #f7faff;
@@ -802,8 +803,6 @@ p {
   flex-direction:row;
   margin-top: 90px;
   padding: 15px;
-
-
 }
 
 .services-features >h2,
@@ -818,6 +817,7 @@ p {
   justify-content: center;
   align-items: center;
  
+
 }
 .services-main .services {
   justify-content: center;
@@ -864,8 +864,13 @@ p {
  .services-features.flex{
   padding: 15px;
   align-items: center;
+<<<<<<< HEAD
   min-height: 40vh;
   
+=======
+  height: 40vh;
+
+>>>>>>> 647f451ecfc058410754c87605205d5cc4cfc187
 }
 
 .services-features .service p {
@@ -902,6 +907,7 @@ p {
 }
 
 .useful-features h3{
+
   font-size: 1.5rem;
   padding: 15px 0px 50px 30px;
 }
@@ -1009,10 +1015,12 @@ padding-top: 15px;
 
   background-color: #dddddd;
   height: 50vh;
+
 }
 
 
 .contact-us .flex{
+
   width: 55%;
   display: flex;
   height: 50vh;
@@ -1037,7 +1045,6 @@ padding-top: 15px;
 .contact-us .form #btn {
   margin-top: 25px;
   background-color: #0066ff;
-  color: white;
   width: 120px;
 }
 
@@ -1082,6 +1089,7 @@ width: 20vw;
     background-color: white;
     color: #0066ff;
     border: 2px solid #0066ff;
+
 }
 
 hr.solid {
@@ -1202,6 +1210,7 @@ hr.solid {
   .contact-us .form{
     width: 100%;
   }
+
   .form input{
     width: auto;
     padding-bottom: 10px;
@@ -1242,6 +1251,7 @@ hr.solid {
   .useful-features h3 {
 
     margin: 15px 0px 0px 30px;
+
   }
 
   .choose-us {
@@ -1256,7 +1266,14 @@ hr.solid {
 .choose-us .empty-box{
     width: 100%;
 }
+<<<<<<< HEAD
 
+=======
+.about-us .sign-in .login .btn{
+  width: 75px;
+
+}
+>>>>>>> 647f451ecfc058410754c87605205d5cc4cfc187
 .services h3{
     font-size: 1rem;
     padding: 0%;
@@ -1281,10 +1298,12 @@ hr.solid {
   justify-content: space-evenly;
 }
 }
+
 @media(max-width:370px){
   .choose-us .feature .point{
     display: block;
   }
 
-}
+
+
 
