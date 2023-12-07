@@ -811,7 +811,7 @@ p {
     margin-left: 30px;
     padding-top: 60px;
     padding-bottom :60px; ;
-    font-size: 2.5em;
+    font-size: 2em;
 }
 .services-main .empty-box {
   justify-content: center;
@@ -864,7 +864,6 @@ margin: 10%;
   padding: 15px;
   align-items: center;
   min-height: 40vh;
-  
 }
 
 .services-features .service p {
@@ -906,16 +905,16 @@ margin: 10%;
 }
 
  .useful-features .empty-box {
-  height: 40%;
+  min-height: 30vh;
+
   background-color:#dddddd  ;
   border: 1px solid #b0b0b0;
   margin-bottom: 10%;
 }
-
 .useful-features .flex .service {
   border-radius: 0%;
   width: 28vw;
-  min-height: 55vh;
+  min-height: 60vh;
   align-items: center;
   justify-content: space-between;
 }
@@ -940,12 +939,15 @@ margin: 10%;
   .college-features .empty-box{
     min-height: 30vh;
     background-color: #dddddd;
-    margin-bottom: 15%;
+    margin-bottom: 10%;
   }
+
   /* choose-us */
 .choose-us {
   display: flex;
   flex-direction: row;
+  min-height: 80vh;
+  height: auto;
   padding: 0px 60px 0px 30px;
   background-color: #f7faff;
   justify-content: space-between;
@@ -980,7 +982,7 @@ margin: 10%;
 .choose-us .empty-box {
   background-color:#dddddd ;
   width: 45vw;
-  min-height: 80vh;
+  min-height: 60vh;
   border: 1px solid #b0b0b0;
 }
 
@@ -997,10 +999,8 @@ margin: 10%;
 
 .contact-us .empty-box {
   width: 35vw;
-
   background-color: #dddddd;
   min-height: 50vh;
-
 }
 
 
@@ -1015,24 +1015,27 @@ margin: 10%;
  
 .form input {
   height: 5vh;
-  width: 19vw;
+  width: 46%;
 }
-.contact-us .form #fname {
-  margin-right: 19px;
+.contact-us .form .firstname {
+  margin-right: 15px;
 }
-.contact-us .form #phone {
-  width: 40vw;
-  margin: 20px 0px 20px 0px;
+.contact-us .form .phone {
+  width: 96%;
+  margin: 20px 0px 0px 0px;
 }
-.contact-us .form #email {
-  width: 40vw;
-  margin-bottom: 4%;
+.contact-us .form .email {
+width: 96%;
+margin: 20px 0px 0px 0px;
 }
-.contact-us .form #btn {
+
+.contact-us .form .send-btn {
   margin-top: 25px;
   background-color: #0066ff;
-  width: 120px;
+  margin-left: 35%;
+  width: 20%;
 }
+
 
 /*About us  */
 
@@ -1064,18 +1067,15 @@ width: 20vw;
 }
 
 .about-us .register .btn {
-  border-radius: 0%;
-  margin-bottom: 5%;
- 
+  border-radius: 0%; 
 }
 .about-us .sign-in .login .btn {
-    padding-top: 20px; 
-    border-radius: 0%;
-    width: 135px;
-    background-color: white;
-    color: #0066ff;
-    border: 2px solid #0066ff;
-
+    
+  border-radius: 15px;
+  background-color: white;
+  color: #4f93f8;
+  border: 2px solid #4f93f8;
+  margin-top: 15%;
 }
 
 hr.solid {
@@ -1136,6 +1136,11 @@ hr.solid {
     width: 100%;
     min-height: 50vh;
   }
+  .useful-features .flex .service {
+
+    min-height: 55vh;
+  }
+
   .contact-us h2{
     width: 90%;
     padding-bottom: 30px;
@@ -1148,9 +1153,6 @@ hr.solid {
   .choose-us .feature h2 {
 
     padding-top: 30px;
-  }
-  p{
-    padding:10%;
   }
   .contact-us{
     flex-direction: column;
@@ -1168,26 +1170,31 @@ hr.solid {
     width: 100%;
   }
 
-  .form input{
-    min-width:100%;
-    padding-bottom: 10px;
-    margin-bottom: 2%;
+  .contact-us .form input{
+    width: 100%;
+    margin-bottom: 5%;
   }
+  .contact-us .form .phone {
+
+    width: 100%;
+  }
+  .contact-us .form .email{
+    width: 100%;
+  } 
+
+  
   .about-us .flex{
     padding: 0%;
   }
   .choose-us .feature .quote{
     padding: 0%;
   }
-  .choose-us .feature .point{
-    padding-bottom: 12px;
-    padding-right: 20px;
-  }
   .useful-features{
     padding: 0px;
   }
   .choose-us .empty-box{
     min-height: 35vh;
+    width: 100%;
   }
   
   .services .block {
@@ -1209,14 +1216,10 @@ hr.solid {
 
   .choose-us {
     flex-direction: column;
-    min-height: 100vh;
+
     padding: 15px;
   }
 .choose-us .feature {
-    width: 100%;
-}
-
-.choose-us .empty-box{
     width: 100%;
 }
 
@@ -1231,6 +1234,10 @@ hr.solid {
     justify-content: space-between;
     
 }
+.services-features >h2, .useful-features > h2, .college-features >h2{
+  padding-top: 30px;
+  padding-bottom: 25px;
+}
 .contact-us .flex{
   width: 100%;
   padding: 10px;
@@ -1238,7 +1245,7 @@ hr.solid {
   padding: 20px;
 }
 .about-us{
-  height: 70vh;
+  min-height: 70vh;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
