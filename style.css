@@ -831,8 +831,7 @@ p {
  font-size: 2em;
  font-weight:200;
  align-items: center;
-
-
+margin: 10%;
  line-height: 1.6;
 
 }
@@ -865,7 +864,6 @@ p {
   padding: 15px;
   align-items: center;
   min-height: 40vh;
-
 }
 
 .services-features .service p {
@@ -877,9 +875,8 @@ p {
   min-height: 60vh;
 }
 
-
 .services-features  .circle {
-  height: 200px;
+  min-height: 200px;
   width: 200px;
   background-color:#dddddd ;
   border-radius: 50%;
@@ -909,13 +906,11 @@ p {
 
  .useful-features .empty-box {
   min-height: 30vh;
+
   background-color:#dddddd  ;
   border: 1px solid #b0b0b0;
   margin-bottom: 10%;
 }
-
-
-
 .useful-features .flex .service {
   border-radius: 0%;
   width: 28vw;
@@ -923,7 +918,6 @@ p {
   align-items: center;
   justify-content: space-between;
 }
-
   /* college features */
 
   .college-features{
@@ -943,10 +937,11 @@ p {
     justify-content: space-evenly;
   }
   .college-features .empty-box{
-    height: 30vh;
+    min-height: 30vh;
     background-color: #dddddd;
     margin-bottom: 10%;
   }
+
   /* choose-us */
 .choose-us {
   display: flex;
@@ -1072,8 +1067,7 @@ width: 20vw;
 }
 
 .about-us .register .btn {
-  border-radius: 0%;
-  
+  border-radius: 0%; 
 }
 .about-us .sign-in .login .btn {
     
@@ -1140,7 +1134,7 @@ hr.solid {
   }
   .services-main .empty-box{
     width: 100%;
-    height: 50vh;
+    min-height: 50vh;
   }
   .useful-features .flex .service {
 
@@ -1164,6 +1158,7 @@ hr.solid {
     flex-direction: column;
     width: 100%;
     padding: 15px;
+    margin-bottom: 10%;  
   }
   .contact-us .flex h2 {
     font-size: 1.2rem;
@@ -1219,9 +1214,9 @@ hr.solid {
     width: 100%;
   }
 
-
   .choose-us {
     flex-direction: column;
+
     padding: 15px;
   }
 .choose-us .feature {
@@ -1262,3 +1257,4 @@ hr.solid {
     display: block;
   }
 }
+
