@@ -831,8 +831,7 @@ p {
  font-size: 2em;
  font-weight:200;
  align-items: center;
-
-
+margin: 10%;
  line-height: 1.6;
 
 }
@@ -855,7 +854,7 @@ p {
   display: flex;
   flex-direction: column;
   min-width: 45vw;
-  height: 80vh;
+  min-height: 80vh;
   justify-content: space-evenly;
   align-items: flex-start;
   padding: 15px;
@@ -864,8 +863,8 @@ p {
  .services-features.flex{
   padding: 15px;
   align-items: center;
-  height: 40vh;
-
+  min-height: 40vh;
+  
 }
 
 .services-features .service p {
@@ -877,9 +876,8 @@ p {
   min-height: 60vh;
 }
 
-
 .services-features  .circle {
-  height: 200px;
+  min-height: 200px;
   width: 200px;
   background-color:#dddddd ;
   border-radius: 50%;
@@ -908,27 +906,18 @@ p {
 }
 
  .useful-features .empty-box {
-  height: 50%;
+  height: 40%;
   background-color:#dddddd  ;
   border: 1px solid #b0b0b0;
-}
-
-.useful-features .flex .service .head{
-padding-top: 15px;
-
+  margin-bottom: 10%;
 }
 
 .useful-features .flex .service {
   border-radius: 0%;
   width: 28vw;
-  height: 60vh;
+  min-height: 55vh;
   align-items: center;
   justify-content: space-between;
-}
-.useful-features .flex .service p{
-  padding-top: 50px;
-  margin: 0%;
-
 }
   /* college features */
 
@@ -949,8 +938,9 @@ padding-top: 15px;
     justify-content: space-evenly;
   }
   .college-features .empty-box{
-    height: 30vh;
+    min-height: 30vh;
     background-color: #dddddd;
+    margin-bottom: 15%;
   }
   /* choose-us */
 .choose-us {
@@ -965,7 +955,7 @@ padding-top: 15px;
   align-items: center;
   justify-content: center;
   width: 45%;
-  height:40vh;
+  min-height:40vh;
  
 }
 .choose-us .feature h2 {
@@ -990,7 +980,7 @@ padding-top: 15px;
 .choose-us .empty-box {
   background-color:#dddddd ;
   width: 45vw;
-  height: 80vh;
+  min-height: 80vh;
   border: 1px solid #b0b0b0;
 }
 
@@ -1009,7 +999,7 @@ padding-top: 15px;
   width: 35vw;
 
   background-color: #dddddd;
-  height: 50vh;
+  min-height: 50vh;
 
 }
 
@@ -1018,7 +1008,7 @@ padding-top: 15px;
 
   width: 55%;
   display: flex;
-  height: 50vh;
+  min-height: 50vh;
   flex-direction: column;
   justify-content: space-between;
 }
@@ -1028,7 +1018,7 @@ padding-top: 15px;
   width: 19vw;
 }
 .contact-us .form #fname {
-  margin-right: 25px;
+  margin-right: 19px;
 }
 .contact-us .form #phone {
   width: 40vw;
@@ -1036,6 +1026,7 @@ padding-top: 15px;
 }
 .contact-us .form #email {
   width: 40vw;
+  margin-bottom: 4%;
 }
 .contact-us .form #btn {
   margin-top: 25px;
@@ -1074,7 +1065,7 @@ width: 20vw;
 
 .about-us .register .btn {
   border-radius: 0%;
-  padding-bottom: 20px;
+  margin-bottom: 5%;
  
 }
 .about-us .sign-in .login .btn {
@@ -1143,7 +1134,7 @@ hr.solid {
   }
   .services-main .empty-box{
     width: 100%;
-    height: 50vh;
+    min-height: 50vh;
   }
   .contact-us h2{
     width: 90%;
@@ -1165,6 +1156,7 @@ hr.solid {
     flex-direction: column;
     width: 100%;
     padding: 15px;
+    margin-bottom: 10%;  
   }
   .contact-us .flex h2 {
     font-size: 1.2rem;
@@ -1177,8 +1169,9 @@ hr.solid {
   }
 
   .form input{
-    width: auto;
+    min-width:100%;
     padding-bottom: 10px;
+    margin-bottom: 2%;
   }
   .about-us .flex{
     padding: 0%;
@@ -1194,7 +1187,7 @@ hr.solid {
     padding: 0px;
   }
   .choose-us .empty-box{
-    height: 35vh;
+    min-height: 35vh;
   }
   
   .services .block {
@@ -1213,15 +1206,10 @@ hr.solid {
   .services-main .services h2{
     width: 100%;
   }
-  .useful-features h3 {
-
-    margin: 15px 0px 0px 30px;
-
-  }
 
   .choose-us {
     flex-direction: column;
-    height: 100vh;
+    min-height: 100vh;
     padding: 15px;
   }
 .choose-us .feature {
@@ -1231,10 +1219,7 @@ hr.solid {
 .choose-us .empty-box{
     width: 100%;
 }
-.about-us .sign-in .login .btn{
-  width: 75px;
 
-}
 .services h3{
     font-size: 1rem;
     padding: 0%;
@@ -1265,3 +1250,4 @@ hr.solid {
     display: block;
   }
 }
+
