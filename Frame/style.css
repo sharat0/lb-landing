@@ -1,12 +1,12 @@
 * {
-  margin: 0;
-  padding: 1px;
+  margin: 1px;
+  padding: 3px;
   box-sizing: border-box;
 }
 
 body {
   overflow-x: hidden;
-  font-family: ;
+
 }
 
 ul li {
@@ -48,6 +48,15 @@ header ul {
   font-size: 1.2em;
   font-weight: 300;
   text-align: center;
+}
+h1{
+  color: #323F52;
+  font-family: Roboto;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 57.6px; /* 120% */
+  letter-spacing: 0.96px;
 }
 #modules {
   min-height: 100vh;
@@ -91,16 +100,12 @@ header ul {
   display: flex;
   flex-direction: row;
 }
-.pre-admission .img {
-  width: 50%;
-  min-height: 100vh;
-  height: 60vh;
-}
+
  .features {
   border-radius: 0%;
   align-items: center;
   justify-content: space-between;
-  width: 20 vw;
+  width: 20vw;
   padding: 10px;
 }
 .flex {
@@ -109,6 +114,7 @@ header ul {
   flex-direction: row;
   flex-wrap: wrap;
   gap: 10px;
+  padding-left: 15px;
 }
 
 .image {
@@ -123,15 +129,68 @@ header ul {
   border-radius: 48px;
 }
 
-.CRM .img {
-  border-radius: 48px;
-  width: 100%;
-}
+
 .CRM{
 display: flex;
 }
 
 .CRM .featured {
   min-height: 100vh;
-  padding-left: 35px;
+  
+}
+.student-info{
+  display: flex;
+  min-height: 100vh;
+
+}
+
+.img{
+  width: 50%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+.finance{
+  display: flex;
+  min-height: 100vh;
+}
+.analytics{
+  display: flex;
+  min-height: 100vh;
+  padding: 3em;
+}
+.analytics img{
+  width: 80%;
+}
+.learning-management{
+  display: flex;
+  min-height: 100vh;
+}
+.addons{
+  display: flex;
+  min-height: 60vh;
+  justify-content: center;
+  align-items: center;
+}
+.addons img{
+  width: 80%;
+  align-items: center;
+}
+.addons .details{
+  width: 50%;
+  align-items: center;
+}
+.addons p{
+  padding-top: 30px;
+  width: 40vw;
+  color: #687281;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23.28px; 
+}
+.addons h2{
+  padding-bottom: 20px;
 }
