@@ -6,7 +6,15 @@
 
 body {
   overflow-x: hidden;
+}
 
+.logo {
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  display: none;
 }
 
 ul li {
@@ -20,9 +28,17 @@ header a {
   padding: 5px 10px;
   border-radius: 5px;
   transition: 0.2s;
-  padding-left: 30px;
 }
 
+header a:hover {
+  background-color: #0066ff57;
+  color: #000;
+}
+
+.active a {
+  background-color: #0066ff !important;
+  color: #fff !important;
+}
 
 header {
   position: fixed;
@@ -44,11 +60,20 @@ header ul {
   align-items: center;
   width: 45%;
 }
-.head {
-  font-size: 1.2em;
-  font-weight: 300;
-  text-align: center;
+
+.nav-btn {
+  width: 20%;
 }
+.head{
+  color: #323F52;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  
+}
+
+
 h1{
   color: #323F52;
   font-family: Roboto;
@@ -58,34 +83,32 @@ h1{
   line-height: 57.6px; /* 120% */
   letter-spacing: 0.96px;
 }
-#modules {
+.modules {
   min-height: 100vh;
-  height: auto;
-  background-color: #EFF3F9;;
+ 
+  background-color: #F8F8F8;
   display: flex;
   align-items: center;
   margin-top: 66px;
 }
 .feature {
-  min-height: 100vh;
-  height: 60vh;
+
   width: 50vw;
-  margin-top: 5%;
   margin: 2%;
 }
-#modules h1 {
+.modules h1 {
   align-items: center;
-  padding-top: 200px;
+  
   font-size: 3.5em;
   font-family: "Prompt", sans-serif;
 }
 .software {
   min-height: 100vh;
-  height: 40vh;
   display: flex;
-  flex-direction: row;
+  align-items: center;
+  background-color: #ffffff;
 }
-.details {
+.software .details{
   width: 50%;
   margin: 2%;
   font-size: 1.2em;
@@ -94,11 +117,19 @@ h1{
 .pre-admn {
   width: 50%;
   min-height: 100vh;
-  padding: 5rem;
+  padding-left: 3rem;
+  align-items: center;
+  padding-top: 8em;
 }
 .pre-admission {
   display: flex;
-  flex-direction: row;
+  padding-left: 3em;
+  align-items: center;
+  justify-content: center;
+  background-color: #eff3f9;
+}
+.pre-admission  image{
+  height: 340px;
 }
 
  .features {
@@ -106,6 +137,7 @@ h1{
   align-items: center;
   justify-content: space-between;
   width: 20vw;
+  min-width: 200px;
   padding: 10px;
 }
 .flex {
@@ -124,59 +156,88 @@ h1{
 
 .image img {
   width: 100%;
-  height: 100%;
+  min-height: 100%;
   object-fit: cover;
   border-radius: 48px;
 }
 
-
 .CRM{
-display: flex;
+ display: flex;
+ min-height: 100vh;
+ align-items: center;
+
+}
+.CRM image{
+  min-height: 530px;
 }
 
 .CRM .featured {
-  min-height: 100vh;
-  
+ min-width: 50%;
 }
-.student-info{
+.CRM h1{
+  padding-left: 2%;
+}
+.student-info {
   display: flex;
   min-height: 100vh;
-
-}
-
-.img{
-  width: 50%;
-  justify-content: center;
-  display: flex;
   align-items: center;
-  padding: 20px;
+  justify-content: center;
+  background-color: #EFF3F9;
+  padding-left: 3em;
 }
+.information{
+ width: 50%;
+ padding-top: 5rem;
+ padding-bottom: 5rem;
+}
+
+
 .finance{
   display: flex;
   min-height: 100vh;
+  align-items: center;
+}
+.finance-type{
+  width: 50%;
+  align-items: center;
+  padding: 5em 5em 5em 2em;
+}
+.finance .image{
+  min-height: 340px;
 }
 .analytics{
   display: flex;
+  align-items: center;
+  justify-content: space-between;
   min-height: 100vh;
   padding: 3em;
+  background-color: #eff3f9;
 }
-.analytics img{
-  width: 80%;
+.analysis{
+  width: 50%;
+  padding-left: 2em;
+}
+.analytics .image{
+  height: 530px;
 }
 .learning-management{
   display: flex;
+  align-items: center;
+  flex-wrap: wrap;
   min-height: 100vh;
+ 
+}
+.learning-management .image{
+  height: 480px;
 }
 .addons{
   display: flex;
-  min-height: 60vh;
+  min-height: 100vh;
   justify-content: center;
   align-items: center;
+  background-color: #eff3f9
 }
-.addons img{
-  width: 80%;
-  align-items: center;
-}
+
 .addons .details{
   width: 50%;
   align-items: center;
@@ -194,3 +255,151 @@ display: flex;
 .addons h2{
   padding-bottom: 20px;
 }
+.rating{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  
+
+}
+.rating1{
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  padding: 10%;
+  flex-direction: column;
+}
+.rating2{
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  padding: 10%;
+  flex-direction: column;
+}
+.special-feature{
+  display: flex;
+  min-height: 40vh;
+  background-color: #eff3f9
+}
+.student-info image {
+  height: 530px;
+}
+.f-learn{
+  min-height: 60vh;
+  display: flex;
+  justify-content: space-between;
+  background-color: #253858;
+  color: white;
+  padding-top: 5em;
+}
+.f-learn span{
+  color: white;
+}
+.ftr{
+  max-width: 200px;
+}
+
+.imagev1 img{
+  width: 500px;
+  max-width: 100%;;
+}
+
+
+/* responsivenes */
+
+@media (min-width: 240px) and (max-width: 860px){
+  .feature{
+    width: 100%;
+  
+  }
+  .modules{
+    flex-direction: column;
+    min-height: 120vh;
+  }
+  .modules.image{
+    min-width: 420px;
+  }
+  .software{
+    flex-direction: column;
+  }
+  .software .details{
+    width: 100vw;
+    margin-left: 10%;
+  }
+  .pre-admission{
+    flex-direction: column;
+  }
+  .pre-admn{
+    width: 100%;
+    padding-left: 0;
+    padding-top: 2em;
+  }
+  .flex{
+    flex-direction: column;
+    width: 100%;
+  }
+  .features{
+    width: 85vw;
+    padding: 0.5em;
+    max-width: 100%;
+  }
+  .CRM{
+    flex-direction: column;
+
+  }
+  .student-info {
+    flex-direction: column;
+  }
+  .information{
+    padding:2em ;
+    width: 100vw;
+
+  }
+  .finance{
+    flex-direction: column;
+  }
+  .finance-type{
+    width: 100vw;
+  }
+  .analytics {
+   
+   flex-direction: column;
+  }
+  .analysis{
+    width: 100vw;
+    padding-left: 2em;
+  }
+  .f-learn{
+    flex-direction: column;
+    width: 98%;
+  }
+  .addons{
+    flex-direction: column;
+  }
+  .addons .details{
+    width: 100%;
+  }
+  .addons p{
+    width: 100%;
+  }
+  .rating{
+    flex-direction: column;
+  }
+  .rating1{
+    width: 100%;
+  }
+  .rating2{
+    width: 100%;
+  }
+}
+
+
+
+
+
+@media(min-width:861px){
+}
+  
+  
+  
