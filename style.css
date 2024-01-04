@@ -780,6 +780,10 @@ p {
     transform: rotate(-45deg);
   }
 
+  .nav-container input[type="checkbox"]:checked ~ body {
+    position: fixed !important;
+  }
+
   .nav-container input[type="checkbox"]:checked ~ .logo {
     display: none;
   }
