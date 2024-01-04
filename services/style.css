@@ -84,12 +84,9 @@ h1{
   letter-spacing: 0.96px;
 }
 .modules {
-  min-height: 100vh;
- 
   background-color: #F8F8F8;
   display: flex;
   align-items: center;
-  margin-top: 66px;
 }
 .feature {
 
@@ -141,17 +138,11 @@ h1{
   padding: 10px;
 }
 .flex {
-  width: 50vw;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 10px;
   padding-left: 15px;
-}
-
-.image {
-  width: 521px;
-  height: 374px;
 }
 
 .image img {
