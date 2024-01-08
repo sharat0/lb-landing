@@ -1,6 +1,5 @@
 .main{
     padding-top: 5%;
-    min-height: 100vh;
     background-color: #f1f7ff;
 }
 
@@ -180,11 +179,14 @@ footer .flex{
 
 
 @media(min-width:300px) and (max-width:1090px){
-    h1{
+    h1,h2{
         font-size: 2.5rem !important;
     }
 }
 @media(min-width:300px) and (max-width:660px){
+    .main{
+        background-color: #fff;
+    }
     .flex{
         display: block;
     }
