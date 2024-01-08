@@ -100,6 +100,10 @@
     display: none;
 }
 
+.testimonials{
+    padding-bottom: 5%;
+}
+
 .testimonials .flex{
     width: 60%;
     margin-left: 20%;
@@ -171,4 +175,50 @@ footer p{
 
 footer .flex{
     padding-bottom: 2%;
+}
+
+
+
+@media(min-width:300px) and (max-width:1090px){
+    h1{
+        font-size: 2.5rem !important;
+    }
+}
+@media(min-width:300px) and (max-width:660px){
+    .flex{
+        display: block;
+    }
+    .block{
+        width: 100% !important;
+    }
+    .main svg{
+        width: 60%;
+        margin-left: 20%;
+    }
+    .intern-img{
+        width: 50%;
+    }
+    .our-interns .flex{
+        display: block !important;
+        width: 100%;
+        margin: 0;
+    }
+    .block{
+        width: 100%;
+    }
+    p, h1, h2{
+        display: block;
+        width: 100%;
+    }
+    .testimonials .flex{
+        display: flex;
+        width: 90%;
+        margin-left: 5%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    footer .block{
+        margin-top: 4%;
+    }
 }
