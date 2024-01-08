@@ -1,0 +1,25 @@
+    <div class="testimonials">
+        <h2 class="head">Testimonials</h2>
+        <div class="flex intern1">
+            <img class="intern-img" src="../img/ease.svg" alt="">
+            <div class="block">
+                <p>" Lorem ipsum, dolor sit amet consectetur adipisicing elit. In modi harum repellendus esse impedit
+                    cumque placeat architecto atque illum adipisci incidunt, dolor nesciunt, molestiae facilis iure
+                    suscipit fuga repellat eos id velit! Libero nostrum, illum laboriosam fugiat cupiditate temporibus
+                    omnis tenetur molestias illo excepturi, porro eveniet deleniti sit optio! Atque? "</p>
+                    <h3>Name</h3>
+                    <h4>Designation</h4>
+            </div>
+        </div>
+        <div class="flex intern1">
+            <img class="intern-img" src="../img/ease.svg" alt="">
+            <div class="block">
+                <p>" Lorem ipsum, dolor sit amet consectetur adipisicing elit. In modi harum repellendus esse impedit
+                    cumque placeat architecto atque illum adipisci incidunt, dolor nesciunt, molestiae facilis iure
+                    suscipit fuga repellat eos id velit! Libero nostrum, illum laboriosam fugiat cupiditate temporibus
+                    omnis tenetur molestias illo excepturi, porro eveniet deleniti sit optio! Atque? "</p>
+                    <h3>Name</h3>
+                    <h4>Designation</h4>
+            </div>
+        </div>
+    </div>
