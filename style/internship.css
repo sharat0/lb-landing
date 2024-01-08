@@ -1,0 +1,174 @@
+.main{
+    padding-top: 5%;
+    min-height: 100vh;
+    background-color: #f1f7ff;
+}
+
+.btn{
+    background-color: #417cff;
+}
+
+.flex{
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    place-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.main .block{
+    width: 40%;
+}
+
+.main .btn{
+    display: block;
+    width: 40%;
+    margin-left: 30%;
+    margin-top: 10%;
+}
+
+.internship-img{
+    width: 50%;
+}
+
+.our-interns .flex{
+    min-height: 30vh;
+    background-color: #f1f7ff;
+    padding: 5%;
+    width: 80%;
+    margin: 2% 10%;
+    border-radius: 20px;
+}
+
+.our-interns {
+    overflow: hidden;
+    position: relative;
+}
+
+.our-interns .flex {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.our-interns .flex.active {
+    display: flex;
+}
+
+.our-interns h2{
+    margin-left: 3%;
+}
+
+.our-interns p{
+    margin-bottom: 0;
+}
+
+.intern-img{
+    width: 30%;
+}
+
+.programs{
+    background-color: #f1f7ff;
+    margin-bottom: 2%;
+    padding: 5%;
+}
+.head{
+    text-align: center !important;
+    margin-bottom: 30px;
+}
+
+.programs .block{
+    background-color: #fff;
+    width: 30%;
+    min-height: 20vh;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    margin-bottom: 2%;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.8rem;
+    font-family: 'Quicksand', sans-serif !important;
+    border-radius: 10px;
+}
+.programs .block p {
+    display: none;
+}
+
+.programs .block:hover p {
+    display: block;
+}
+.programs .block:hover img {
+    display: none;
+}
+
+.testimonials .flex{
+    width: 60%;
+    margin-left: 20%;
+    background-color: #f1f7ff;
+    border-radius: 20px;
+    margin-bottom: 2%;
+    padding: 2%;
+}
+
+.testimonials p {
+    font-size: 2.5rem;
+}
+
+.testimonials h3, .testimonials h4{
+    font: 2.2rem;
+    padding-left: 5%;
+    margin-bottom: 5px;
+}
+
+.testimonials h4{
+    color: rgb(20, 20, 20);
+    margin-bottom: 5%;
+}
+
+.testimonials .flex svg{
+    width: 50%;
+}
+
+
+/* FOOTER */
+/* FOOTER */
+/* FOOTER */
+
+footer{
+    background-color: #f1f7ff;
+    font-size: 1.5Rem;
+    text-align: center;
+}
+
+#pop{
+    width: 80%;
+    margin-left: 10%;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    padding: 30px;
+    margin-bottom: 3%;
+}
+
+footer .block{
+    width: 30%;
+}
+
+footer h1{
+    text-decoration: underline 20px solid #545454;
+}
+
+footer h2,footer h3,footer h4{
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+}
+footer h1{
+    font-family: 'Russo One', sans-serif;
+}
+
+footer p{
+    margin-bottom: 0;
+    text-align: center;
+}
+
+footer .flex{
+    padding-bottom: 2%;
+}
